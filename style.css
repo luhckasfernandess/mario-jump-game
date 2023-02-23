@@ -1,0 +1,25 @@
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-obstacle {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: game-obstacle-animation 2s infinite linear;
+}
+
+
+@keyframes game-obstacle-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
