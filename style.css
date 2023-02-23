@@ -14,6 +14,11 @@
     animation: game-obstacle-animation 2s infinite linear;
 }
 
+.game-hero {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
 
 @keyframes game-obstacle-animation {
     from {
