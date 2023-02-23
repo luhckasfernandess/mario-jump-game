@@ -18,6 +18,9 @@
     position: absolute;
     bottom: 0;
     width: 150px;
+}
+
+.hero-skill {
     animation: game-hero-animation 500ms ease-out;
 }
 
