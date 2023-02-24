@@ -18,6 +18,11 @@ const verificationLoop = setInterval(() => {
 
         hero.style.animation = 'none';
         hero.style.bottom = `${heroPosition}px`;
+        hero.src = './images/game-over.webp'
+        hero.style.width = '100px'
+        hero.style.marginLeft = '50px'
+
+        clearInterval(verificationLoop);
     }
 }, 10);
 
