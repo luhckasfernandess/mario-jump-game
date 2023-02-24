@@ -14,6 +14,15 @@
     animation: game-obstacle-animation 2s infinite linear;
 }
 
+.game-hero {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
+
+.hero-skill {
+    animation: game-hero-animation 500ms ease-out;
+}
 
 @keyframes game-obstacle-animation {
     from {
@@ -21,5 +30,23 @@
     }
     to {
         right: 100%;
+    }
+}
+
+@keyframes game-hero-animation {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0;
     }
 }
