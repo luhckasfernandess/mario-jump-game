@@ -85,9 +85,6 @@
         margin-bottom: -5px;
     }
 
-    .game-obstacle {
-        animation: game-obstacle-animation 1s infinite linear;
-    }
 
     @keyframes game-hero-animation {
         0% {
