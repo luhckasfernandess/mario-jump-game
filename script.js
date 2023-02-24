@@ -11,7 +11,7 @@ const verificationLoop = setInterval(() => {
     const obstaclePosition = gameObstacle.offsetLeft;
     const heroPosition = +window.getComputedStyle(hero).bottom.replace('px', '');
 
-    if (obstaclePosition <= 120 && obstaclePosition > 0 && heroPosition <= 80) {
+    if (obstaclePosition <= 120 && obstaclePosition > 0 && heroPosition <= 125) {
 
         gameObstacle.style.animation = 'none';
         gameObstacle.style.left = `${obstaclePosition}px`;
@@ -20,7 +20,7 @@ const verificationLoop = setInterval(() => {
         hero.style.bottom = `${heroPosition}px`;
         hero.src = './images/game-over.webp'
         hero.style.width = '100px'
-        hero.style.marginLeft = '50px'
+        hero.style.marginLeft = '35px'
 
         clearInterval(verificationLoop);
     }
