@@ -9,14 +9,14 @@
 
 .game-obstacle {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     width: 80px;
     animation: game-obstacle-animation 1.5s infinite linear;
 }
 
 .game-hero {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     width: 150px;
 }
 
