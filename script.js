@@ -4,7 +4,7 @@ const gameClouds = document.querySelector('.game-clouds');
 
 const heroSkill = () => {
     gameHero.classList.add('hero-skill');
-    setTimeout(() => hero.classList.remove('hero-skill'), 500);
+    setTimeout(() => gameHero.classList.remove('hero-skill'), 500);
 }
 
 const verificationLoop = setInterval(() => {
