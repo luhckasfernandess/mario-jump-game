@@ -1,7 +1,7 @@
 .game-board {
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    background: linear-gradient(#87CEEB, #E0F6FF);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -9,19 +9,32 @@
 
 .game-obstacle {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     width: 80px;
     animation: game-obstacle-animation 1.5s infinite linear;
 }
 
 .game-hero {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     width: 150px;
 }
 
 .hero-skill {
     animation: game-hero-animation 500ms ease-out;
+}
+
+.game-clouds {
+    position: absolute;
+    width: 550px;
+    animation: game-clouds-animation 10s infinite linear;
+}
+
+.game-gram {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: -100px;
 }
 
 @keyframes game-obstacle-animation {
@@ -35,18 +48,27 @@
 
 @keyframes game-hero-animation {
     0% {
-        bottom: 0;
+        bottom: 45px;
     }
     40% {
-        bottom: 180px;
+        bottom: 225px;
     }
     50% {
-        bottom: 180px;
+        bottom: 225px;
     }
     60% {
-        bottom: 180px;
+        bottom: 225px;
     }
     100% {
-        bottom: 0;
+        bottom: 45px;
+    }
+}
+
+@keyframes game-clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
     }
 }
