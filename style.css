@@ -27,7 +27,7 @@
 .game-clouds {
     position: absolute;
     width: 550px;
-    animation: game-clouds-animation 10s infinite linear;
+    animation: game-clouds-animation 20s infinite linear;
 }
 
 .game-gram {
