@@ -24,6 +24,12 @@
     animation: game-hero-animation 500ms ease-out;
 }
 
+.game-clouds {
+    position: absolute;
+    width: 550px;
+    animation: game-clouds-animation 10s infinite linear;
+}
+
 @keyframes game-obstacle-animation {
     from {
         right: -80px;
@@ -48,5 +54,14 @@
     }
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes game-clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
     }
 }
