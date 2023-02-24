@@ -33,6 +33,7 @@
 .game-clouds {
     position: absolute;
     width: 550px;
+    padding-top: 20px;
     animation: game-clouds-animation 20s infinite linear;
 }
 
