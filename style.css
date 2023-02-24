@@ -30,6 +30,13 @@
     animation: game-clouds-animation 10s infinite linear;
 }
 
+.game-gram {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: -100px;
+}
+
 @keyframes game-obstacle-animation {
     from {
         right: -80px;
