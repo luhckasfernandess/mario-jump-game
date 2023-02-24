@@ -32,3 +32,4 @@ const verificationLoop = setInterval(() => {
 }, 10);
 
 document.addEventListener('keydown', heroSkill);
+document.ontouchstart = heroSkill;
